@@ -8,13 +8,98 @@
     <!-- Integrando Font Awesome, para los íconos -->
     <script src="https://kit.fontawesome.com/0034a23102.js" crossorigin="anonymous"></script>
 
+    <!-- Integrando las fuentes Lato y Montserrat -->
+    <link rel="stylesheet" href="/css/fonts.css">
+
     <!-- Integrando los estillos CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
+    <!-- Cabecera -->
+    <header>
+        <div class="contenedor">
+            <div class="contenido-cabecera">
+                <img src="images/icono-claro.png" alt="Ícono de claro"> 
+                <p class="lato-regular">Distribuidor autorizado de Claro</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de navegación -->
+    <nav>
+        <div class="contenedor">
+            <div class="contenido-nav">
+                <div class="logo">
+                    <img src="/images/logo-colores.png" alt="Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#inicio" class="lato-regular">Inicio</a></li>
+                        <li><a href="#planes" class="lato-regular">Planes</a></li>
+                        <li><a href="#quienes-somos" class="lato-regular">¿Quienes somos?</a></li>
+                        <li><a href="#como-funciona" class="lato-regular">¿Cómo funciona?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <div class="inicio">
+            <div class="contenedor">
+                <div class="contenido-inicio">
+                    <img src="/images/modelo-banner.png" alt="Modelo claro">
+                    <form action="">
+                        <h2 class="montserrat-regular">Déjame tus Datos</h2>
+                        <input type="text" name="nombre" id="" class="lato-regular" style="width: 100%;" placeholder="Nombre">
+                        <input type="tel" name="telefono" id="" class="lato-regular" style="width: 50%;" placeholder="Teléfono">
+                        <input type="email" name="correo" id="" class="lato-regular" style="width: 100%;" placeholder="Correo">
+                        <input type="text" name="servicio" id="" class="lato-regular" style="width: 50%;" placeholder="Servicio">
+                        <textarea name="mensaje" id="" class="lato-regular" cols="30" rows="5" style="width: 100%;" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="lato-regular">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="inicio-banner">
+            <div class="contenedor">
+                <div class="contenido-inicio-banner">
+                    <div class="inicio-banner-texto">
+                        <h4 class="montserrat-regular">¡Obtén el plan que se adecue a tus necesidades!</h4>
+                        <h3 class="montserrat-bold">TODO ILIMITADO Desde S/ 69.90</h3>
+                    </div>
+                    <div class="inicio-banner-accion">
+                        <a href="#" class="lato-regular">
+                            <i class="fa-solid fa-phone"></i>
+                            OBTEN TU PLAN AQUÍ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Planes -->
+    <section id="planes">
+        <div class="contenedor">
+            <h2 class="montserrat-bold">Conoce nuestros planes</h2>
+        <img src="/images/planes_max_claro.jpg" alt="">
+        <img src="/images/Planes_max_ilimitado.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Sección Quienes somos -->
+    <section id="quienes-somos">
+        
+    </section>
+
+    <!-- Sección Cómo funciona -->
+    <section id="como-funciona">
+        
+    </section>    
 
     <!-- Integrando los scripts de JavaScript -->
-    <script src="scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

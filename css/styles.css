@@ -1,0 +1,174 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    max-width: 1240px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 54px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #EF3829;
+    width: 100%;
+}
+
+.contenido-cabecera {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* Estilos para el menu */
+.contenido-nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #5B5D68;
+    font-size: 17px;
+}
+
+/* Estilos para la sección Inicio */
+.inicio {
+    /* height: 850px; */
+    background-image: url(/images/fondo-1.jpg);
+}
+
+.contenido-inicio {
+    padding: 70px 0 0 0;
+    display: flex;
+    column-gap: 100px;
+}
+
+.contenido-inicio img {
+    /* width: 615px; */
+    height: 690px;
+}
+
+.contenido-inicio form {
+   /*  width: 550px; */
+    height: 670px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.contenido-inicio form h2 {
+    font-size: 30px;
+    color: #212121;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contenido-inicio form input, textarea {
+    font-size: 17px;
+    color: #666666;
+    padding: 15px 10px;
+    background-color: #FAFAFA;
+    border-color: #666666;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.contenido-inicio form button {
+    background-color: #EF3829;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    margin: 10px 0;
+}
+
+.inicio-banner {
+    background-color: #EF3829;
+}
+
+.contenido-inicio-banner {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.inicio-banner-texto h4, h3 {
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.inicio-banner-texto h4 {
+    font-size: 30px;
+}
+
+.inicio-banner-texto h3 {
+    font-size: 35px;
+}
+
+.inicio-banner-accion {
+    text-align: center;
+}
+
+.inicio-banner-accion a {
+    background-color: #FFFFFF;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #EF3829;
+    border-radius: 5px;
+}
+
+.inicio-banner-accion a i {
+    margin-right: 5px;
+}
+
+
+
+
+
+/* Estilos para la sección Planes */
+#planes {
+    text-align: center;
+}
+
+
+
+/* Estilos para la sección Quienes somos */
+#quienes-somos {
+    height: 700px;
+    background-color: #ef7829;
+}
+
+/* Estilos para la sección Cómo funciona */
+#como-funciona {
+    height: 700px;
+    background-color: #1743a3;
+}
