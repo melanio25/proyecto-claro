@@ -84,6 +84,18 @@ section[id] {
 
 /* Estilos para la cabecera */
 
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+
+
 /* Banner */
 .banner {
     background-color: #EF3829;
@@ -100,17 +112,6 @@ section[id] {
 }
 
 /* Estilos para el menu */
-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
-}
-
 nav{
     background-color: #FFFFFF;
 }
@@ -247,7 +248,7 @@ nav{
 }
 
 .inicio__banner__content {
-    height: 150px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,8 +472,8 @@ nav{
 
 .funciona__content {
     width: 100%;
-    background-image: url(/images/fondo-2_2.jpg);
-    object-fit: cover;
+    background-image: url(/images/fondo-2.jpg);
+    background-position: center;
 }
 
 .funciona__card__list {
@@ -568,19 +569,23 @@ footer {
     right: 30px;
 }
 
-.btn__go__top {
-    display: none;
+.btn__go__top, .btn__wha {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background-color: #EF3829;
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 10px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, .3);
     transition: all .5s ease;
+}
+
+.btn__go__top {
+    display: none;
+    background-color: #EF3829;
+    margin-bottom: 10px;
+    
 }
 
 .btn__go__top:hover {
@@ -593,18 +598,9 @@ footer {
 
 .btn__wha {
     display: block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
     background-color: #43C354;
-    color: #FFFFFF;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
     position: absolute;
     bottom: 0;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, .3);
-    transition: all .5s ease;
 }
 
 .btn__wha:hover {
@@ -616,6 +612,7 @@ footer {
 
 /* Media query para móviles */
 @media screen and (max-width: 768px) {
+    /* Estilos para la navegación */
     .nav__list {
         display: none;
         background-color: #FFFFFF;
@@ -625,10 +622,17 @@ footer {
         left: 0;
         width: 100%;
         padding: 5%;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
     }
 
     .nav__list.active {
         display: flex;
+    }
+
+    .nav__link {
+        display: block;
     }
 
     .nav__toggle {
@@ -642,5 +646,89 @@ footer {
     
     .nav__toggle .fa-times {
         display: none;
+    }
+
+    /* Estilos para la sección Inicio */
+    .inicio__content {
+        flex-direction: column;
+    }
+
+    .inicio__figure {
+        width: 100%;
+    }
+
+    .inicio__form {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .inicio__banner {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .inicio__banner__content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .inicio__banner__accion {
+        margin-bottom: 2rem;
+    }
+
+    /* Estilos para la sección Planes */
+    .planes__banner__left i {
+        font-size: 1rem;
+    }
+
+    /* Estiloa para la sección Qué quieres hoy */
+    .card__list {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    /* Estilos para la sección Quienes somos */
+    .somos__content {
+        flex-direction: column-reverse;
+    }
+
+    .somos__left, .somos__right {
+        width: 100%;
+    }
+
+    .somos__right__action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos para la sección Cómo funciona */
+    .funciona__content {
+        background-position: center;
+    }
+
+    .funciona__card__list {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 3rem 0;
+    }
+
+    .funciona__card {
+        width: 48%;
+    }
+
+    .funciona__footer {
+        flex-direction: column;
+    }
+
+    .funciona__footer__left, .funciona_footer__right {
+        width: 100%;
+    }
+
+    .funciona__footer__left {
+        text-align: center;
     }
 }
