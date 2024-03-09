@@ -57,6 +57,8 @@ document.querySelector('form').addEventListener('submit', (event) => {
         'SERVIVIO: ' + servicio + '\n' +
         'MENSAJE: ' + mensaje
     );
+
+    document.getElementById('inicio__form').reset();
 });
 
 
