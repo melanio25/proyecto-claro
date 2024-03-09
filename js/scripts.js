@@ -40,6 +40,26 @@ menuLinks.forEach(menuLink => {
 });
 
 
+/* ========== Enviar formulario ========== */
+document.querySelector('form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const telefono = document.getElementById('telefono').value;
+    const correo = document.getElementById('correo').value;
+    const servicio = document.getElementById('servicio').value;
+    const mensaje = document.getElementById('mensaje').value;
+    
+    alert(
+        'Fueron enviados correctamente los siguientes datos:' + '\n' +
+        'NOMBRE: ' + nombre + '\n' +
+        'TELÉFONO: ' + telefono + '\n' +
+        'CORREO: ' + correo + '\n' +
+        'SERVIVIO: ' + servicio + '\n' +
+        'MENSAJE: ' + mensaje
+    );
+});
+
+
 
 /* ========== Mostrar botón ir arriba ========== */
 window.onscroll = function () {
